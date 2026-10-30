@@ -1,0 +1,16 @@
+{
+  "auxiliary_scanner/ssh/ssh_enumusers": {
+    "name": "SSH Username Enumeration",
+    "fullname": "auxiliary/scanner/ssh/ssh_enumusers",
+    "type": "auxiliary",
+    "rank": 300,
+    "references": ["CVE-2016-6210", "CVE-2018-15473"]
+  },
+  "post_linux/gather/enum_system": {
+    "name": "Linux Gather System Info",
+    "fullname": "post/linux/gather/enum_system",
+    "type": "post",
+    "rank": 300,
+    "references": ["CVE-2016-6210"]
+  }
+}

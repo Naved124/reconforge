@@ -1,0 +1,9 @@
+# reconforge suggested modules - REVIEW BEFORE USE
+# Every line is commented out on purpose. Confirm the target is in scope and the
+# module fits the exact service version, then uncomment what you intend to run.
+
+# CVE-2016-6210 -> 10.10.11.23:22 (auxiliary: SSH Username Enumeration)
+# use auxiliary/scanner/ssh/ssh_enumusers
+# set RHOSTS 10.10.11.23
+# set RPORT 22
+# check

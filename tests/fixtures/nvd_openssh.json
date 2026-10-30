@@ -1,0 +1,20 @@
+{
+  "resultsPerPage": 2,
+  "totalResults": 2,
+  "vulnerabilities": [
+    {
+      "cve": {
+        "id": "CVE-2016-10009",
+        "descriptions": [{"lang": "en", "value": "Untrusted search path vulnerability in ssh-agent in OpenSSH before 7.4."}],
+        "metrics": {"cvssMetricV31": [{"cvssData": {"baseScore": 7.3, "baseSeverity": "HIGH"}}]}
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2016-6210",
+        "descriptions": [{"lang": "en", "value": "sshd in OpenSSH before 7.3 allows remote attackers to enumerate users via timing."}],
+        "metrics": {"cvssMetricV31": [{"cvssData": {"baseScore": 5.9, "baseSeverity": "MEDIUM"}}]}
+      }
+    }
+  ]
+}

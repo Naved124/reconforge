@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "reconforge"
+version = "0.2.0"
+description = "Scoped recon-to-report automation for authorized penetration tests"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "MD Naved Raja Khan" }]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[project.scripts]
+reconforge = "reconforge.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["reconforge*"]
