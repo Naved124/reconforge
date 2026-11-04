@@ -128,22 +128,26 @@ def test_resource_script_is_fully_commented():
 
 def test_report_command_end_to_end(tmp_path, monkeypatch):
     scope = write_scope(tmp_path, "10.10.11.0/24\n")
-    payload = json.loads((FIX / "nvd_openssh.json").read_text())
-    empty = {"vulnerabilities": []}
+    ssh_payload = json.loads((FIX / "nvd_openssh_cpe.json").read_text())
+    empty = {"totalResults": 0, "vulnerabilities": []}
 
-    def fake_lookup(self, product, version, limit=20):
-        if not product or not version:
-            return []
-        return parse_nvd_response(payload if product == "OpenSSH" else empty)
+    def fake_fetch(self, params):
+        # CPE query for OpenSSH; every other query (keyword fallback) comes back empty
+        return ssh_payload if params.get("virtualMatchString") == "cpe:2.3:a:openbsd:openssh" else empty
 
-    monkeypatch.setattr(NVDClient, "lookup", fake_lookup)
+    monkeypatch.setattr(NVDClient, "_fetch", fake_fetch)
+    monkeypatch.setattr(NVDClient, "_fetch_cpes", lambda self, params: {"totalResults": 0, "products": []})
     out = tmp_path / "reports"
     rc = cli.main(["report", "--scope", str(scope), "--xml", str(FIX / "scan.xml"),
-                   "--out", str(out), "--msf-db", str(FIX / "msf_meta.json")])
+                   "--out", str(out), "--msf-db", str(FIX / "msf_meta.json"),
+                   "--cache-dir", str(tmp_path / "cache")])
     assert rc == 0
     run_dir = next(p for p in out.iterdir() if not p.name.startswith("."))
     report = (run_dir / "report.md").read_text()
     assert "CVE-2016-6210" in report
+    # OpenSSH 7.2p2 is an Ubuntu package, so range matches are downgraded to unconfirmed
+    assert "`[unconfirmed]`" in report and "distro package, fixes may be backported" in report
+    assert "CVE confidence:** unconfirmed 5" in report
     assert "auxiliary/scanner/ssh/ssh_enumusers" in report
     assert "Burp Suite" in report
     assert "[HIGH] Anonymous FTP login allowed" in report

@@ -1,0 +1,2 @@
+# HTB Starting Point lab (Fawn)
+10.129.64.80/32

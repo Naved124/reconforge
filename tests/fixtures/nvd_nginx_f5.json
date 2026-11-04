@@ -1,0 +1,521 @@
+{
+ "resultsPerPage": 6,
+ "startIndex": 0,
+ "totalResults": 6,
+ "vulnerabilities": [
+  {
+   "cve": {
+    "id": "CVE-2011-4315",
+    "vulnStatus": "Modified",
+    "descriptions": [
+     {
+      "lang": "en",
+      "value": "Heap-based buffer overflow in compression-pointer processing in core/ngx_resolver.c in nginx before 1.0.10 allows remote resolvers to cause a denial of service (daemon crash) or possibly have unspecified other impact via a long response."
+     }
+    ],
+    "metrics": {
+     "cvssMetricV2": [
+      {
+       "cvssData": {
+        "baseScore": 6.8
+       },
+       "baseSeverity": "MEDIUM"
+      }
+     ]
+    },
+    "configurations": [
+     {
+      "nodes": [
+       {
+        "operator": "OR",
+        "negate": false,
+        "cpeMatch": [
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:f5:nginx:*:*:*:*:*:*:*:*",
+          "versionStartIncluding": "0.6.18",
+          "versionEndExcluding": "1.0.10"
+         },
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:f5:nginx:*:*:*:*:*:*:*:*",
+          "versionStartIncluding": "1.1.0",
+          "versionEndIncluding": "1.1.7"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "nodes": [
+       {
+        "operator": "OR",
+        "negate": false,
+        "cpeMatch": [
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:o:fedoraproject:fedora:16:*:*:*:*:*:*:*"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "nodes": [
+       {
+        "operator": "OR",
+        "negate": false,
+        "cpeMatch": [
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:suse:studio:1.2:*:*:*:standard:*:*:*"
+         },
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:suse:studio_onsite:1.2:*:*:*:*:*:*:*"
+         },
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:suse:webyast:1.2:*:*:*:*:*:*:*"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "cve": {
+    "id": "CVE-2012-1180",
+    "vulnStatus": "Modified",
+    "descriptions": [
+     {
+      "lang": "en",
+      "value": "Use-after-free vulnerability in nginx before 1.0.14 and 1.1.x before 1.1.17 allows remote HTTP servers to obtain sensitive information from process memory via a crafted backend response, in conjunction with a client request."
+     }
+    ],
+    "metrics": {
+     "cvssMetricV2": [
+      {
+       "cvssData": {
+        "baseScore": 5.0
+       },
+       "baseSeverity": "MEDIUM"
+      }
+     ]
+    },
+    "configurations": [
+     {
+      "nodes": [
+       {
+        "operator": "OR",
+        "negate": false,
+        "cpeMatch": [
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:f5:nginx:*:*:*:*:*:*:*:*",
+          "versionStartIncluding": "0.1.0",
+          "versionEndExcluding": "1.0.14"
+         },
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:f5:nginx:*:*:*:*:*:*:*:*",
+          "versionStartIncluding": "1.1.0",
+          "versionEndExcluding": "1.1.17"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "nodes": [
+       {
+        "operator": "OR",
+        "negate": false,
+        "cpeMatch": [
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:o:fedoraproject:fedora:15:*:*:*:*:*:*:*"
+         },
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:o:fedoraproject:fedora:16:*:*:*:*:*:*:*"
+         },
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:o:fedoraproject:fedora:17:*:*:*:*:*:*:*"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "nodes": [
+       {
+        "operator": "OR",
+        "negate": false,
+        "cpeMatch": [
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:o:debian:debian_linux:6.0:*:*:*:*:*:*:*"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "cve": {
+    "id": "CVE-2009-4487",
+    "vulnStatus": "Modified",
+    "descriptions": [
+     {
+      "lang": "en",
+      "value": "nginx 0.7.64 writes data to a log file without sanitizing non-printable characters, which might allow remote attackers to modify a window's title, or possibly execute arbitrary commands or overwrite files, via an HTTP request containing an escape sequence for a terminal emulator."
+     }
+    ],
+    "metrics": {
+     "cvssMetricV2": [
+      {
+       "cvssData": {
+        "baseScore": 6.8
+       },
+       "baseSeverity": "MEDIUM"
+      }
+     ]
+    },
+    "configurations": [
+     {
+      "nodes": [
+       {
+        "operator": "OR",
+        "negate": false,
+        "cpeMatch": [
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:f5:nginx:0.7.64:*:*:*:*:*:*:*"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "cve": {
+    "id": "CVE-2021-23017",
+    "vulnStatus": "Modified",
+    "descriptions": [
+     {
+      "lang": "en",
+      "value": "A security issue in nginx resolver was identified, which might allow an attacker who is able to forge UDP packets from the DNS server to cause 1-byte memory overwrite, resulting in worker process crash or potential other impact."
+     }
+    ],
+    "metrics": {
+     "cvssMetricV31": [
+      {
+       "cvssData": {
+        "baseScore": 7.7,
+        "baseSeverity": "HIGH"
+       }
+      }
+     ]
+    },
+    "configurations": [
+     {
+      "nodes": [
+       {
+        "operator": "OR",
+        "negate": false,
+        "cpeMatch": [
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:f5:nginx:*:*:*:*:*:*:*:*",
+          "versionStartIncluding": "0.6.18",
+          "versionEndExcluding": "1.20.1"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "nodes": [
+       {
+        "operator": "OR",
+        "negate": false,
+        "cpeMatch": [
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:openresty:openresty:*:*:*:*:*:*:*:*",
+          "versionEndExcluding": "1.19.3.2"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "nodes": [
+       {
+        "operator": "OR",
+        "negate": false,
+        "cpeMatch": [
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:o:fedoraproject:fedora:33:*:*:*:*:*:*:*"
+         },
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:o:fedoraproject:fedora:34:*:*:*:*:*:*:*"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "nodes": [
+       {
+        "operator": "OR",
+        "negate": false,
+        "cpeMatch": [
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:netapp:ontap_select_deploy_administration_utility:-:*:*:*:*:*:*:*"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "nodes": [
+       {
+        "operator": "OR",
+        "negate": false,
+        "cpeMatch": [
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:oracle:blockchain_platform:*:*:*:*:*:*:*:*",
+          "versionEndExcluding": "21.1.2"
+         },
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:oracle:communications_control_plane_monitor:3.4:*:*:*:*:*:*:*"
+         },
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:oracle:communications_control_plane_monitor:4.2:*:*:*:*:*:*:*"
+         },
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:oracle:communications_control_plane_monitor:4.3:*:*:*:*:*:*:*"
+         },
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:oracle:communications_control_plane_monitor:4.4:*:*:*:*:*:*:*"
+         },
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:oracle:communications_fraud_monitor:*:*:*:*:*:*:*:*",
+          "versionStartIncluding": "3.4",
+          "versionEndIncluding": "4.4"
+         },
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:oracle:communications_operations_monitor:3.4:*:*:*:*:*:*:*"
+         },
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:oracle:communications_operations_monitor:4.2:*:*:*:*:*:*:*"
+         },
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:oracle:communications_operations_monitor:4.3:*:*:*:*:*:*:*"
+         },
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:oracle:communications_operations_monitor:4.4:*:*:*:*:*:*:*"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "cve": {
+    "id": "CVE-2013-4547",
+    "vulnStatus": "Modified",
+    "descriptions": [
+     {
+      "lang": "en",
+      "value": "nginx 0.8.41 through 1.4.3 and 1.5.x before 1.5.7 allows remote attackers to bypass intended restrictions via an unescaped space character in a URI."
+     }
+    ],
+    "metrics": {
+     "cvssMetricV2": [
+      {
+       "cvssData": {
+        "baseScore": 7.5
+       },
+       "baseSeverity": "HIGH"
+      }
+     ]
+    },
+    "configurations": [
+     {
+      "nodes": [
+       {
+        "operator": "OR",
+        "negate": false,
+        "cpeMatch": [
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:f5:nginx:*:*:*:*:*:*:*:*",
+          "versionStartIncluding": "0.8.41",
+          "versionEndExcluding": "1.4.4"
+         },
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:f5:nginx:*:*:*:*:*:*:*:*",
+          "versionStartIncluding": "1.5.0",
+          "versionEndIncluding": "1.5.6"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "nodes": [
+       {
+        "operator": "OR",
+        "negate": false,
+        "cpeMatch": [
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:suse:lifecycle_management_server:1.3:*:*:*:*:*:*:*"
+         },
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:suse:studio_onsite:1.3:*:*:*:*:*:*:*"
+         },
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:suse:webyast:1.3:*:*:*:*:*:*:*"
+         },
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:o:opensuse:opensuse:11.4:*:*:*:*:*:*:*"
+         },
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:o:opensuse:opensuse:12.2:*:*:*:*:*:*:*"
+         },
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:o:opensuse:opensuse:12.3:*:*:*:*:*:*:*"
+         },
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:o:opensuse:opensuse:13.1:*:*:*:*:*:*:*"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "cve": {
+    "id": "CVE-2017-7529",
+    "vulnStatus": "Modified",
+    "descriptions": [
+     {
+      "lang": "en",
+      "value": "Nginx versions since 0.5.6 up to and including 1.13.2 are vulnerable to integer overflow vulnerability in nginx range filter module resulting into leak of potentially sensitive information triggered by specially crafted request."
+     }
+    ],
+    "metrics": {
+     "cvssMetricV31": [
+      {
+       "cvssData": {
+        "baseScore": 7.5,
+        "baseSeverity": "HIGH"
+       }
+      }
+     ]
+    },
+    "configurations": [
+     {
+      "nodes": [
+       {
+        "operator": "OR",
+        "negate": false,
+        "cpeMatch": [
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:f5:nginx:*:*:*:*:*:*:*:*",
+          "versionStartIncluding": "0.5.6",
+          "versionEndIncluding": "1.12.1"
+         },
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:f5:nginx:*:*:*:*:*:*:*:*",
+          "versionStartIncluding": "1.13.0",
+          "versionEndIncluding": "1.13.2"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "nodes": [
+       {
+        "operator": "OR",
+        "negate": false,
+        "cpeMatch": [
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:puppet:puppet_enterprise:*:*:*:*:*:*:*:*",
+          "versionEndExcluding": "2016.4.7"
+         },
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:puppet:puppet_enterprise:*:*:*:*:*:*:*:*",
+          "versionStartIncluding": "2017.1.0",
+          "versionEndIncluding": "2017.1.1"
+         },
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:puppet:puppet_enterprise:*:*:*:*:*:*:*:*",
+          "versionStartIncluding": "2017.2.1",
+          "versionEndIncluding": "2017.2.3"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "nodes": [
+       {
+        "operator": "OR",
+        "negate": false,
+        "cpeMatch": [
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:apple:xcode:*:*:*:*:*:*:*:*",
+          "versionEndExcluding": "13.0"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

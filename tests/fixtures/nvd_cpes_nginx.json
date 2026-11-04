@@ -1,0 +1,315 @@
+{
+ "resultsPerPage": 33,
+ "startIndex": 0,
+ "totalResults": 33,
+ "products": [
+  {
+   "cpe": {
+    "cpeName": "cpe:2.3:a:f5:nginx:0.1.14:*:*:*:*:*:*:*",
+    "deprecated": false
+   }
+  },
+  {
+   "cpe": {
+    "cpeName": "cpe:2.3:a:f5:nginx:0.1.27:*:*:*:*:*:*:*",
+    "deprecated": false
+   }
+  },
+  {
+   "cpe": {
+    "cpeName": "cpe:2.3:a:f5:nginx:0.3.10:*:*:*:*:*:*:*",
+    "deprecated": false
+   }
+  },
+  {
+   "cpe": {
+    "cpeName": "cpe:2.3:a:f5:nginx:0.3.11:*:*:*:*:*:*:*",
+    "deprecated": false
+   }
+  },
+  {
+   "cpe": {
+    "cpeName": "cpe:2.3:a:f5:nginx:0.3.2:*:*:*:*:*:*:*",
+    "deprecated": false
+   }
+  },
+  {
+   "cpe": {
+    "cpeName": "cpe:2.3:a:f5:nginx:0.3.30:*:*:*:*:*:*:*",
+    "deprecated": false
+   }
+  },
+  {
+   "cpe": {
+    "cpeName": "cpe:2.3:a:f5:nginx:0.5.9:*:*:*:*:*:*:*",
+    "deprecated": false
+   }
+  },
+  {
+   "cpe": {
+    "cpeName": "cpe:2.3:a:f5:nginx:0.7.22:*:*:*:*:*:*:*",
+    "deprecated": false
+   }
+  },
+  {
+   "cpe": {
+    "cpeName": "cpe:2.3:a:f5:nginx:0.8.9:*:*:*:*:*:*:*",
+    "deprecated": false
+   }
+  },
+  {
+   "cpe": {
+    "cpeName": "cpe:2.3:a:f5:nginx:0.9.2:*:*:*:*:*:*:*",
+    "deprecated": false
+   }
+  },
+  {
+   "cpe": {
+    "cpeName": "cpe:2.3:a:f5:nginx:1.1.17:*:*:*:*:*:*:*",
+    "deprecated": false
+   }
+  },
+  {
+   "cpe": {
+    "cpeName": "cpe:2.3:a:igor_sysoev:nginx:0.1.14:*:*:*:*:*:*:*",
+    "deprecated": true,
+    "deprecatedBy": [
+     {
+      "cpeName": "cpe:2.3:a:nginx:nginx:0.1.14:*:*:*:*:*:*:*"
+     }
+    ]
+   }
+  },
+  {
+   "cpe": {
+    "cpeName": "cpe:2.3:a:igor_sysoev:nginx:0.1.27:*:*:*:*:*:*:*",
+    "deprecated": true,
+    "deprecatedBy": [
+     {
+      "cpeName": "cpe:2.3:a:nginx:nginx:0.1.27:*:*:*:*:*:*:*"
+     }
+    ]
+   }
+  },
+  {
+   "cpe": {
+    "cpeName": "cpe:2.3:a:igor_sysoev:nginx:0.3.10:*:*:*:*:*:*:*",
+    "deprecated": true,
+    "deprecatedBy": [
+     {
+      "cpeName": "cpe:2.3:a:nginx:nginx:0.3.10:*:*:*:*:*:*:*"
+     }
+    ]
+   }
+  },
+  {
+   "cpe": {
+    "cpeName": "cpe:2.3:a:igor_sysoev:nginx:0.3.11:*:*:*:*:*:*:*",
+    "deprecated": true,
+    "deprecatedBy": [
+     {
+      "cpeName": "cpe:2.3:a:nginx:nginx:0.3.11:*:*:*:*:*:*:*"
+     }
+    ]
+   }
+  },
+  {
+   "cpe": {
+    "cpeName": "cpe:2.3:a:igor_sysoev:nginx:0.3.2:*:*:*:*:*:*:*",
+    "deprecated": true,
+    "deprecatedBy": [
+     {
+      "cpeName": "cpe:2.3:a:nginx:nginx:0.3.2:*:*:*:*:*:*:*"
+     }
+    ]
+   }
+  },
+  {
+   "cpe": {
+    "cpeName": "cpe:2.3:a:igor_sysoev:nginx:0.3.30:*:*:*:*:*:*:*",
+    "deprecated": true,
+    "deprecatedBy": [
+     {
+      "cpeName": "cpe:2.3:a:nginx:nginx:0.3.30:*:*:*:*:*:*:*"
+     }
+    ]
+   }
+  },
+  {
+   "cpe": {
+    "cpeName": "cpe:2.3:a:igor_sysoev:nginx:0.5.9:*:*:*:*:*:*:*",
+    "deprecated": true,
+    "deprecatedBy": [
+     {
+      "cpeName": "cpe:2.3:a:nginx:nginx:0.5.9:*:*:*:*:*:*:*"
+     }
+    ]
+   }
+  },
+  {
+   "cpe": {
+    "cpeName": "cpe:2.3:a:igor_sysoev:nginx:0.7.22:*:*:*:*:*:*:*",
+    "deprecated": true,
+    "deprecatedBy": [
+     {
+      "cpeName": "cpe:2.3:a:nginx:nginx:0.7.22:*:*:*:*:*:*:*"
+     }
+    ]
+   }
+  },
+  {
+   "cpe": {
+    "cpeName": "cpe:2.3:a:igor_sysoev:nginx:0.8.9:*:*:*:*:*:*:*",
+    "deprecated": true,
+    "deprecatedBy": [
+     {
+      "cpeName": "cpe:2.3:a:nginx:nginx:0.8.9:*:*:*:*:*:*:*"
+     }
+    ]
+   }
+  },
+  {
+   "cpe": {
+    "cpeName": "cpe:2.3:a:igor_sysoev:nginx:0.9.2:*:*:*:*:*:*:*",
+    "deprecated": true,
+    "deprecatedBy": [
+     {
+      "cpeName": "cpe:2.3:a:nginx:nginx:0.9.2:*:*:*:*:*:*:*"
+     }
+    ]
+   }
+  },
+  {
+   "cpe": {
+    "cpeName": "cpe:2.3:a:igor_sysoev:nginx:1.1.17:*:*:*:*:*:*:*",
+    "deprecated": true,
+    "deprecatedBy": [
+     {
+      "cpeName": "cpe:2.3:a:nginx:nginx:1.1.17:*:*:*:*:*:*:*"
+     }
+    ]
+   }
+  },
+  {
+   "cpe": {
+    "cpeName": "cpe:2.3:a:nginx:nginx:0.1.14:*:*:*:*:*:*:*",
+    "deprecated": true,
+    "deprecatedBy": [
+     {
+      "cpeName": "cpe:2.3:a:f5:nginx:0.1.14:*:*:*:*:*:*:*"
+     }
+    ]
+   }
+  },
+  {
+   "cpe": {
+    "cpeName": "cpe:2.3:a:nginx:nginx:0.1.27:*:*:*:*:*:*:*",
+    "deprecated": true,
+    "deprecatedBy": [
+     {
+      "cpeName": "cpe:2.3:a:f5:nginx:0.1.27:*:*:*:*:*:*:*"
+     }
+    ]
+   }
+  },
+  {
+   "cpe": {
+    "cpeName": "cpe:2.3:a:nginx:nginx:0.3.10:*:*:*:*:*:*:*",
+    "deprecated": true,
+    "deprecatedBy": [
+     {
+      "cpeName": "cpe:2.3:a:f5:nginx:0.3.10:*:*:*:*:*:*:*"
+     }
+    ]
+   }
+  },
+  {
+   "cpe": {
+    "cpeName": "cpe:2.3:a:nginx:nginx:0.3.11:*:*:*:*:*:*:*",
+    "deprecated": true,
+    "deprecatedBy": [
+     {
+      "cpeName": "cpe:2.3:a:f5:nginx:0.3.11:*:*:*:*:*:*:*"
+     }
+    ]
+   }
+  },
+  {
+   "cpe": {
+    "cpeName": "cpe:2.3:a:nginx:nginx:0.3.2:*:*:*:*:*:*:*",
+    "deprecated": true,
+    "deprecatedBy": [
+     {
+      "cpeName": "cpe:2.3:a:f5:nginx:0.3.2:*:*:*:*:*:*:*"
+     }
+    ]
+   }
+  },
+  {
+   "cpe": {
+    "cpeName": "cpe:2.3:a:nginx:nginx:0.3.30:*:*:*:*:*:*:*",
+    "deprecated": true,
+    "deprecatedBy": [
+     {
+      "cpeName": "cpe:2.3:a:f5:nginx:0.3.30:*:*:*:*:*:*:*"
+     }
+    ]
+   }
+  },
+  {
+   "cpe": {
+    "cpeName": "cpe:2.3:a:nginx:nginx:0.5.9:*:*:*:*:*:*:*",
+    "deprecated": true,
+    "deprecatedBy": [
+     {
+      "cpeName": "cpe:2.3:a:f5:nginx:0.5.9:*:*:*:*:*:*:*"
+     }
+    ]
+   }
+  },
+  {
+   "cpe": {
+    "cpeName": "cpe:2.3:a:nginx:nginx:0.7.22:*:*:*:*:*:*:*",
+    "deprecated": true,
+    "deprecatedBy": [
+     {
+      "cpeName": "cpe:2.3:a:f5:nginx:0.7.22:*:*:*:*:*:*:*"
+     }
+    ]
+   }
+  },
+  {
+   "cpe": {
+    "cpeName": "cpe:2.3:a:nginx:nginx:0.8.9:*:*:*:*:*:*:*",
+    "deprecated": true,
+    "deprecatedBy": [
+     {
+      "cpeName": "cpe:2.3:a:f5:nginx:0.8.9:*:*:*:*:*:*:*"
+     }
+    ]
+   }
+  },
+  {
+   "cpe": {
+    "cpeName": "cpe:2.3:a:nginx:nginx:0.9.2:*:*:*:*:*:*:*",
+    "deprecated": true,
+    "deprecatedBy": [
+     {
+      "cpeName": "cpe:2.3:a:f5:nginx:0.9.2:*:*:*:*:*:*:*"
+     }
+    ]
+   }
+  },
+  {
+   "cpe": {
+    "cpeName": "cpe:2.3:a:nginx:nginx:1.1.17:*:*:*:*:*:*:*",
+    "deprecated": true,
+    "deprecatedBy": [
+     {
+      "cpeName": "cpe:2.3:a:f5:nginx:1.1.17:*:*:*:*:*:*:*"
+     }
+    ]
+   }
+  }
+ ]
+}

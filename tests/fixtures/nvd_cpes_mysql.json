@@ -1,0 +1,402 @@
+{
+ "resultsPerPage": 45,
+ "startIndex": 0,
+ "totalResults": 45,
+ "products": [
+  {
+   "cpe": {
+    "cpeName": "cpe:2.3:a:mysql:mysql:3.20.32a:*:*:*:*:*:*:*",
+    "deprecated": true,
+    "deprecatedBy": [
+     {
+      "cpeName": "cpe:2.3:a:oracle:mysql:3.20.32a:*:*:*:*:*:*:*"
+     }
+    ]
+   }
+  },
+  {
+   "cpe": {
+    "cpeName": "cpe:2.3:a:mysql:mysql:3.23.19:*:*:*:*:*:*:*",
+    "deprecated": true,
+    "deprecatedBy": [
+     {
+      "cpeName": "cpe:2.3:a:oracle:mysql:3.23.19:*:*:*:*:*:*:*"
+     }
+    ]
+   }
+  },
+  {
+   "cpe": {
+    "cpeName": "cpe:2.3:a:mysql:mysql:3.23.37:*:*:*:*:*:*:*",
+    "deprecated": true,
+    "deprecatedBy": [
+     {
+      "cpeName": "cpe:2.3:a:oracle:mysql:3.23.37:*:*:*:*:*:*:*"
+     }
+    ]
+   }
+  },
+  {
+   "cpe": {
+    "cpeName": "cpe:2.3:a:mysql:mysql:3.23.54a:*:*:*:*:*:*:*",
+    "deprecated": true,
+    "deprecatedBy": [
+     {
+      "cpeName": "cpe:2.3:a:oracle:mysql:3.23.54a:*:*:*:*:*:*:*"
+     }
+    ]
+   }
+  },
+  {
+   "cpe": {
+    "cpeName": "cpe:2.3:a:mysql:mysql:4.0.18:*:*:*:*:*:*:*",
+    "deprecated": true,
+    "deprecatedBy": [
+     {
+      "cpeName": "cpe:2.3:a:oracle:mysql:4.0.18:*:*:*:*:*:*:*"
+     }
+    ]
+   }
+  },
+  {
+   "cpe": {
+    "cpeName": "cpe:2.3:a:mysql:mysql:4.1.0.0:*:*:*:*:*:*:*",
+    "deprecated": true,
+    "deprecatedBy": [
+     {
+      "cpeName": "cpe:2.3:a:mysql:mysql:4.1.0:-:*:*:*:*:*:*"
+     }
+    ]
+   }
+  },
+  {
+   "cpe": {
+    "cpeName": "cpe:2.3:a:mysql:mysql:4.1.0:*:*:*:*:*:*:*",
+    "deprecated": true,
+    "deprecatedBy": [
+     {
+      "cpeName": "cpe:2.3:a:mysql:mysql:4.1.0:-:*:*:*:*:*:*"
+     }
+    ]
+   }
+  },
+  {
+   "cpe": {
+    "cpeName": "cpe:2.3:a:mysql:mysql:4.1.0:-:*:*:*:*:*:*",
+    "deprecated": true,
+    "deprecatedBy": [
+     {
+      "cpeName": "cpe:2.3:a:oracle:mysql:4.1.0:-:*:*:*:*:*:*"
+     }
+    ]
+   }
+  },
+  {
+   "cpe": {
+    "cpeName": "cpe:2.3:a:mysql:mysql:4.1.0:alpha:*:*:*:*:*:*",
+    "deprecated": true,
+    "deprecatedBy": [
+     {
+      "cpeName": "cpe:2.3:a:oracle:mysql:4.1.0:alpha:*:*:*:*:*:*"
+     }
+    ]
+   }
+  },
+  {
+   "cpe": {
+    "cpeName": "cpe:2.3:a:mysql:mysql:4.1.10:*:*:*:*:*:*:*",
+    "deprecated": true,
+    "deprecatedBy": [
+     {
+      "cpeName": "cpe:2.3:a:mysql:mysql:4.1.10:-:*:*:*:*:*:*"
+     }
+    ]
+   }
+  },
+  {
+   "cpe": {
+    "cpeName": "cpe:2.3:a:mysql:mysql:4.1.10:-:*:*:*:*:*:*",
+    "deprecated": true,
+    "deprecatedBy": [
+     {
+      "cpeName": "cpe:2.3:a:oracle:mysql:4.1.10:-:*:*:*:*:*:*"
+     }
+    ]
+   }
+  },
+  {
+   "cpe": {
+    "cpeName": "cpe:2.3:a:mysql:mysql:4.1.13:a:*:*:*:*:*:*",
+    "deprecated": true,
+    "deprecatedBy": [
+     {
+      "cpeName": "cpe:2.3:a:oracle:mysql:4.1.13:a:*:*:*:*:*:*"
+     }
+    ]
+   }
+  },
+  {
+   "cpe": {
+    "cpeName": "cpe:2.3:a:mysql:mysql:4.1:*:*:*:*:*:*:*",
+    "deprecated": true,
+    "deprecatedBy": [
+     {
+      "cpeName": "cpe:2.3:a:mysql:mysql:4.1.0:*:*:*:*:*:*:*"
+     }
+    ]
+   }
+  },
+  {
+   "cpe": {
+    "cpeName": "cpe:2.3:a:mysql:mysql:5.0.14:*:*:*:*:*:*:*",
+    "deprecated": true,
+    "deprecatedBy": [
+     {
+      "cpeName": "cpe:2.3:a:oracle:mysql:5.0.14:*:*:*:*:*:*:*"
+     }
+    ]
+   }
+  },
+  {
+   "cpe": {
+    "cpeName": "cpe:2.3:a:mysql:mysql:5.0.15:a:*:*:*:*:*:*",
+    "deprecated": true,
+    "deprecatedBy": [
+     {
+      "cpeName": "cpe:2.3:a:oracle:mysql:5.0.15:a:*:*:*:*:*:*"
+     }
+    ]
+   }
+  },
+  {
+   "cpe": {
+    "cpeName": "cpe:2.3:a:mysql:mysql:5.0.15a:*:*:*:*:*:*:*",
+    "deprecated": true,
+    "deprecatedBy": [
+     {
+      "cpeName": "cpe:2.3:a:mysql:mysql:5.0.15:a:*:*:*:*:*:*"
+     }
+    ]
+   }
+  },
+  {
+   "cpe": {
+    "cpeName": "cpe:2.3:a:mysql:mysql:5.0.44:sp1:*:*:*:*:*:*",
+    "deprecated": true,
+    "deprecatedBy": [
+     {
+      "cpeName": "cpe:2.3:a:oracle:mysql:5.0.44:sp1:*:*:*:*:*:*"
+     }
+    ]
+   }
+  },
+  {
+   "cpe": {
+    "cpeName": "cpe:2.3:a:mysql:mysql:5.0.54:*:*:*:*:*:*:*",
+    "deprecated": true,
+    "deprecatedBy": [
+     {
+      "cpeName": "cpe:2.3:a:mysql:mysql:5.0.54:-:*:*:*:*:*:*"
+     }
+    ]
+   }
+  },
+  {
+   "cpe": {
+    "cpeName": "cpe:2.3:a:mysql:mysql:5.0.54:-:*:*:*:*:*:*",
+    "deprecated": true,
+    "deprecatedBy": [
+     {
+      "cpeName": "cpe:2.3:a:oracle:mysql:5.0.54:-:*:*:*:*:*:*"
+     }
+    ]
+   }
+  },
+  {
+   "cpe": {
+    "cpeName": "cpe:2.3:a:mysql:mysql:5.0.87:sp1:*:*:*:*:*:*",
+    "deprecated": true,
+    "deprecatedBy": [
+     {
+      "cpeName": "cpe:2.3:a:oracle:mysql:5.0.87:sp1:*:*:*:*:*:*"
+     }
+    ]
+   }
+  },
+  {
+   "cpe": {
+    "cpeName": "cpe:2.3:a:mysql:mysql:5.1.16:*:*:*:*:*:*:*",
+    "deprecated": true,
+    "deprecatedBy": [
+     {
+      "cpeName": "cpe:2.3:a:oracle:mysql:5.1.16:*:*:*:*:*:*:*"
+     }
+    ]
+   }
+  },
+  {
+   "cpe": {
+    "cpeName": "cpe:2.3:a:mysql:mysql:5.1.18:*:*:*:*:*:*:*",
+    "deprecated": true,
+    "deprecatedBy": [
+     {
+      "cpeName": "cpe:2.3:a:oracle:mysql:5.1.18:*:*:*:*:*:*:*"
+     }
+    ]
+   }
+  },
+  {
+   "cpe": {
+    "cpeName": "cpe:2.3:a:mysql:mysql:5.1.25:*:*:*:*:*:*:*",
+    "deprecated": true,
+    "deprecatedBy": [
+     {
+      "cpeName": "cpe:2.3:a:oracle:mysql:5.1.25:*:*:*:*:*:*:*"
+     }
+    ]
+   }
+  },
+  {
+   "cpe": {
+    "cpeName": "cpe:2.3:a:mysql:mysql:5.1.33:*:*:*:*:*:*:*",
+    "deprecated": true,
+    "deprecatedBy": [
+     {
+      "cpeName": "cpe:2.3:a:oracle:mysql:5.1.33:*:*:*:*:*:*:*"
+     }
+    ]
+   }
+  },
+  {
+   "cpe": {
+    "cpeName": "cpe:2.3:a:mysql:mysql:5.1.58:*:*:*:*:*:*:*",
+    "deprecated": true,
+    "deprecatedBy": [
+     {
+      "cpeName": "cpe:2.3:a:oracle:mysql:5.1.58:*:*:*:*:*:*:*"
+     }
+    ]
+   }
+  },
+  {
+   "cpe": {
+    "cpeName": "cpe:2.3:a:mysql:mysql:5.6.36:r1:*:*:*:*:*:*",
+    "deprecated": false
+   }
+  },
+  {
+   "cpe": {
+    "cpeName": "cpe:2.3:a:oracle:mysql:3.20.32a:*:*:*:*:*:*:*",
+    "deprecated": false
+   }
+  },
+  {
+   "cpe": {
+    "cpeName": "cpe:2.3:a:oracle:mysql:3.23.19:*:*:*:*:*:*:*",
+    "deprecated": false
+   }
+  },
+  {
+   "cpe": {
+    "cpeName": "cpe:2.3:a:oracle:mysql:3.23.37:*:*:*:*:*:*:*",
+    "deprecated": false
+   }
+  },
+  {
+   "cpe": {
+    "cpeName": "cpe:2.3:a:oracle:mysql:3.23.54a:*:*:*:*:*:*:*",
+    "deprecated": false
+   }
+  },
+  {
+   "cpe": {
+    "cpeName": "cpe:2.3:a:oracle:mysql:4.0.18:*:*:*:*:*:*:*",
+    "deprecated": false
+   }
+  },
+  {
+   "cpe": {
+    "cpeName": "cpe:2.3:a:oracle:mysql:4.1.0:-:*:*:*:*:*:*",
+    "deprecated": false
+   }
+  },
+  {
+   "cpe": {
+    "cpeName": "cpe:2.3:a:oracle:mysql:4.1.0:alpha:*:*:*:*:*:*",
+    "deprecated": false
+   }
+  },
+  {
+   "cpe": {
+    "cpeName": "cpe:2.3:a:oracle:mysql:4.1.10:-:*:*:*:*:*:*",
+    "deprecated": false
+   }
+  },
+  {
+   "cpe": {
+    "cpeName": "cpe:2.3:a:oracle:mysql:4.1.13:a:*:*:*:*:*:*",
+    "deprecated": false
+   }
+  },
+  {
+   "cpe": {
+    "cpeName": "cpe:2.3:a:oracle:mysql:5.0.14:*:*:*:*:*:*:*",
+    "deprecated": false
+   }
+  },
+  {
+   "cpe": {
+    "cpeName": "cpe:2.3:a:oracle:mysql:5.0.15:a:*:*:*:*:*:*",
+    "deprecated": false
+   }
+  },
+  {
+   "cpe": {
+    "cpeName": "cpe:2.3:a:oracle:mysql:5.0.44:sp1:*:*:*:*:*:*",
+    "deprecated": false
+   }
+  },
+  {
+   "cpe": {
+    "cpeName": "cpe:2.3:a:oracle:mysql:5.0.54:-:*:*:*:*:*:*",
+    "deprecated": false
+   }
+  },
+  {
+   "cpe": {
+    "cpeName": "cpe:2.3:a:oracle:mysql:5.0.87:sp1:*:*:*:*:*:*",
+    "deprecated": false
+   }
+  },
+  {
+   "cpe": {
+    "cpeName": "cpe:2.3:a:oracle:mysql:5.1.16:*:*:*:*:*:*:*",
+    "deprecated": false
+   }
+  },
+  {
+   "cpe": {
+    "cpeName": "cpe:2.3:a:oracle:mysql:5.1.18:*:*:*:*:*:*:*",
+    "deprecated": false
+   }
+  },
+  {
+   "cpe": {
+    "cpeName": "cpe:2.3:a:oracle:mysql:5.1.25:*:*:*:*:*:*:*",
+    "deprecated": false
+   }
+  },
+  {
+   "cpe": {
+    "cpeName": "cpe:2.3:a:oracle:mysql:5.1.33:*:*:*:*:*:*:*",
+    "deprecated": false
+   }
+  },
+  {
+   "cpe": {
+    "cpeName": "cpe:2.3:a:oracle:mysql:5.1.58:*:*:*:*:*:*:*",
+    "deprecated": false
+   }
+  }
+ ]
+}

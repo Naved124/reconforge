@@ -5,12 +5,15 @@ from __future__ import annotations
 from dataclasses import dataclass, field
 from datetime import datetime, timezone
 
-from .cve import CVE
+from .cve import CVE, sort_cves
 from .findings import Finding
 from .msf import Module
 from .nmap import Host, Service
 
 SEV_ORDER = ["CRITICAL", "HIGH", "MEDIUM", "LOW", "UNKNOWN"]
+CONFIDENCES = ["confirmed-range", "exact-cpe", "unconfirmed", "keyword-guess"]
+# Max CVEs listed per service: confirmed-range/exact-cpe ("strong") share one cap
+CAPS = {"strong": 10, "unconfirmed": 5, "keyword-guess": 5}
 
 
 @dataclass
@@ -41,6 +44,33 @@ def _count(values: list[str]) -> str:
     return ", ".join(f"{s.title()} {counts[s]}" for s in SEV_ORDER if s in counts)
 
 
+def _conf_count(values: list[str]) -> str:
+    return ", ".join(f"{c} {values.count(c)}" for c in CONFIDENCES if c in values)
+
+
+def _cve_lines(sf: "ServiceFinding") -> list[str]:
+    """CVE lines for one service, strongest confidence first. confirmed-range and exact-cpe
+    share one cap; unconfirmed and keyword-guess each get a smaller one."""
+    lines, shown, hidden = [], {}, 0
+    for c in sort_cves(sf.cves):
+        group = "unconfirmed" if c.confidence == "unconfirmed" else \
+            "keyword-guess" if c.confidence == "keyword-guess" else "strong"
+        if shown.get(group, 0) >= CAPS[group]:
+            hidden += 1
+            continue
+        shown[group] = shown.get(group, 0) + 1
+        score = f"{c.score}" if c.score is not None else "n/a"
+        summary = c.summary[:180] + ("..." if len(c.summary) > 180 else "")
+        text = f"- **{c.id}** `[{c.confidence}]` ({c.severity}, CVSS {score}): {summary}"
+        if c.reason:
+            text += f" *({c.reason})*"
+        lines.append(text)
+        lines += [f"  - Metasploit {m.type}: `{m.fullname}`" for m in sf.modules.get(c.id, [])]
+    if hidden:
+        lines.append(f"- ...and {hidden} more")
+    return lines
+
+
 def _finding_line(f: Finding) -> str:
     if f.severity == "INFO":
         return f"- *{f.title}*: {f.detail}"
@@ -62,10 +92,16 @@ def render(findings: list[HostFinding], scope_desc: str, offline: bool = False) 
     cves = [c.severity for hf in findings for sf in hf.services for c in sf.cves]
     if cves:
         out.append(f"- **Candidate CVEs:** {_count(cves)}")
+    if cves:
+        out.append(f"- **CVE confidence:** {_conf_count([c.confidence for hf in findings for sf in hf.services for c in sf.cves])}")
     if offline:
         out.append("- **CVE lookup:** skipped (offline mode)")
-    out += ["", "> Misconfigurations come from Nmap script output. CVE matches are based on service",
-            "> banners and keyword search. Treat both as leads to verify manually.", ""]
+    out += ["", "> Misconfigurations come from Nmap script output. CVEs are matched on the CPE Nmap",
+            "> reports, with the detected version checked against NVD's affected ranges. Confidence:",
+            "> `confirmed-range` (version inside an affected range), `exact-cpe` (exact CPE match),",
+            "> `unconfirmed` (no usable or comparable version, or limited trust such as a distro",
+            "> package or vendor alias) and `keyword-guess` (banner keyword search, no CPE).",
+            "> Treat all of them as leads to verify manually.", ""]
 
     for hf in findings:
         h = hf.host
@@ -102,14 +138,7 @@ def render(findings: list[HostFinding], scope_desc: str, offline: bool = False) 
             for f in sf.findings:
                 if f.severity == "INFO":
                     out.append(_finding_line(f))
-            for c in sf.cves[:10]:
-                score = f"{c.score}" if c.score is not None else "n/a"
-                summary = c.summary[:180] + ("..." if len(c.summary) > 180 else "")
-                out.append(f"- **{c.id}** ({c.severity}, CVSS {score}): {summary}")
-                for m in sf.modules.get(c.id, []):
-                    out.append(f"  - Metasploit {m.type}: `{m.fullname}`")
-            if len(sf.cves) > 10:
-                out.append(f"- ...and {len(sf.cves) - 10} more")
+            out += _cve_lines(sf)
             if s.is_web:
                 if sf.cves or sf.findings:
                     out.append("")

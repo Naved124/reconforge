@@ -1,0 +1,33 @@
+{
+  "totalResults": 9,
+  "vulnerabilities": [
+    {"cve": {"id": "CVE-9999-0001", "descriptions": [{"lang": "en", "value": "startIncluding 1.0, endExcluding 2.0"}],
+      "configurations": [{"nodes": [{"operator": "OR", "negate": false, "cpeMatch": [
+        {"vulnerable": true, "criteria": "cpe:2.3:a:acme:widget:*:*:*:*:*:*:*:*", "versionStartIncluding": "1.0", "versionEndExcluding": "2.0"}]}]}]}},
+    {"cve": {"id": "CVE-9999-0002", "descriptions": [{"lang": "en", "value": "startExcluding 1.0, endIncluding 2.0"}],
+      "configurations": [{"nodes": [{"operator": "OR", "negate": false, "cpeMatch": [
+        {"vulnerable": true, "criteria": "cpe:2.3:a:acme:widget:*:*:*:*:*:*:*:*", "versionStartExcluding": "1.0", "versionEndIncluding": "2.0"}]}]}]}},
+    {"cve": {"id": "CVE-9999-0003", "descriptions": [{"lang": "en", "value": "exact 1.5.0"}],
+      "configurations": [{"nodes": [{"operator": "OR", "negate": false, "cpeMatch": [
+        {"vulnerable": true, "criteria": "cpe:2.3:a:acme:widget:1.5.0:*:*:*:*:*:*:*"}]}]}]}},
+    {"cve": {"id": "CVE-9999-0004", "descriptions": [{"lang": "en", "value": "all versions"}],
+      "configurations": [{"nodes": [{"operator": "OR", "negate": false, "cpeMatch": [
+        {"vulnerable": true, "criteria": "cpe:2.3:a:acme:widget:*:*:*:*:*:*:*:*"}]}]}]}},
+    {"cve": {"id": "CVE-9999-0005", "descriptions": [{"lang": "en", "value": "only a vulnerable:false entry"}],
+      "configurations": [{"nodes": [{"operator": "OR", "negate": false, "cpeMatch": [
+        {"vulnerable": false, "criteria": "cpe:2.3:a:acme:widget:1.5.0:*:*:*:*:*:*:*"}]}]}]}},
+    {"cve": {"id": "CVE-9999-0006", "descriptions": [{"lang": "en", "value": "negated node"}],
+      "configurations": [{"nodes": [{"operator": "OR", "negate": true, "cpeMatch": [
+        {"vulnerable": true, "criteria": "cpe:2.3:a:acme:widget:1.5.0:*:*:*:*:*:*:*"}]}]}]}},
+    {"cve": {"id": "CVE-9999-0007", "descriptions": [{"lang": "en", "value": "AND configuration with a platform node"}],
+      "configurations": [{"operator": "AND", "nodes": [
+        {"operator": "OR", "negate": false, "cpeMatch": [{"vulnerable": true, "criteria": "cpe:2.3:a:acme:widget:*:*:*:*:*:*:*:*", "versionEndExcluding": "2.0"}]},
+        {"operator": "OR", "negate": false, "cpeMatch": [{"vulnerable": false, "criteria": "cpe:2.3:o:microsoft:windows:-:*:*:*:*:*:*:*"}]}]}]}},
+    {"cve": {"id": "CVE-9999-0008", "descriptions": [{"lang": "en", "value": "bound that cannot be compared"}],
+      "configurations": [{"nodes": [{"operator": "OR", "negate": false, "cpeMatch": [
+        {"vulnerable": true, "criteria": "cpe:2.3:a:acme:widget:*:*:*:*:*:*:*:*", "versionEndExcluding": "2.x-custom"}]}]}]}},
+    {"cve": {"id": "CVE-9999-0009", "descriptions": [{"lang": "en", "value": "update field p1 with endIncluding 1.5"}],
+      "configurations": [{"nodes": [{"operator": "OR", "negate": false, "cpeMatch": [
+        {"vulnerable": true, "criteria": "cpe:2.3:a:acme:widget:*:p1:*:*:*:*:*:*", "versionEndIncluding": "1.5"}]}]}]}}
+  ]
+}

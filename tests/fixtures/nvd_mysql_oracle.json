@@ -1,0 +1,559 @@
+{
+ "resultsPerPage": 3,
+ "startIndex": 0,
+ "totalResults": 3,
+ "vulnerabilities": [
+  {
+   "cve": {
+    "id": "CVE-2016-6662",
+    "vulnStatus": "Modified",
+    "descriptions": [
+     {
+      "lang": "en",
+      "value": "Oracle MySQL through 5.5.52, 5.6.x through 5.6.33, and 5.7.x through 5.7.15; MariaDB before 5.5.51, 10.0.x before 10.0.27, and 10.1.x before 10.1.17; and Percona Server before 5.5.51-38.1, 5.6.x before 5.6.32-78.0, and 5.7.x before 5.7.14-7 allow local users to create arbitrary configurations and bypass certain protection mechanisms by setting general_log_file to a my.cnf configuration. NOTE: this can be leveraged to execute arbitrary code with root privileges by setting malloc_lib. NOTE: the affected MySQL version information is from Oracle's October 2016 CPU. Oracle has not commented on third-party claims that the issue was silently patched in MySQL 5.5.52, 5.6.33, and 5.7.15."
+     }
+    ],
+    "metrics": {
+     "cvssMetricV30": [
+      {
+       "cvssData": {
+        "baseScore": 9.8,
+        "baseSeverity": "CRITICAL"
+       }
+      }
+     ]
+    },
+    "configurations": [
+     {
+      "nodes": [
+       {
+        "operator": "OR",
+        "negate": false,
+        "cpeMatch": [
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:oracle:mysql:*:*:*:*:*:*:*:*",
+          "versionStartIncluding": "5.5.0",
+          "versionEndIncluding": "5.5.52"
+         },
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:oracle:mysql:*:*:*:*:*:*:*:*",
+          "versionStartIncluding": "5.6.0",
+          "versionEndIncluding": "5.6.33"
+         },
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:oracle:mysql:*:*:*:*:*:*:*:*",
+          "versionStartIncluding": "5.7.0",
+          "versionEndIncluding": "5.7.15"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "nodes": [
+       {
+        "operator": "OR",
+        "negate": false,
+        "cpeMatch": [
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:percona:percona_server:*:*:*:*:*:*:*:*",
+          "versionStartIncluding": "5.5",
+          "versionEndExcluding": "5.5.51-38.1"
+         },
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:percona:percona_server:*:*:*:*:*:*:*:*",
+          "versionStartIncluding": "5.6",
+          "versionEndExcluding": "5.6.32-78.0"
+         },
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:percona:percona_server:*:*:*:*:*:*:*:*",
+          "versionStartIncluding": "5.7",
+          "versionEndExcluding": "5.7.14-7"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "nodes": [
+       {
+        "operator": "OR",
+        "negate": false,
+        "cpeMatch": [
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:mariadb:mariadb:*:*:*:*:*:*:*:*",
+          "versionStartIncluding": "5.5.20",
+          "versionEndExcluding": "5.5.51"
+         },
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:mariadb:mariadb:*:*:*:*:*:*:*:*",
+          "versionStartIncluding": "10.0.0",
+          "versionEndExcluding": "10.0.27"
+         },
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:mariadb:mariadb:*:*:*:*:*:*:*:*",
+          "versionStartIncluding": "10.1.0",
+          "versionEndExcluding": "10.1.17"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "nodes": [
+       {
+        "operator": "OR",
+        "negate": false,
+        "cpeMatch": [
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:o:debian:debian_linux:8.0:*:*:*:*:*:*:*"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "nodes": [
+       {
+        "operator": "OR",
+        "negate": false,
+        "cpeMatch": [
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:redhat:openstack:5.0:*:*:*:*:*:*:*"
+         },
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:redhat:openstack:6.0:*:*:*:*:*:*:*"
+         },
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:redhat:openstack:7.0:*:*:*:*:*:*:*"
+         },
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:redhat:openstack:8:*:*:*:*:*:*:*"
+         },
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:redhat:openstack:9:*:*:*:*:*:*:*"
+         },
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:o:redhat:enterprise_linux:7.0:*:*:*:*:*:*:*"
+         },
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:o:redhat:enterprise_linux_desktop:6.0:*:*:*:*:*:*:*"
+         },
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:o:redhat:enterprise_linux_desktop:7.0:*:*:*:*:*:*:*"
+         },
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:o:redhat:enterprise_linux_server:6.0:*:*:*:*:*:*:*"
+         },
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:o:redhat:enterprise_linux_server_aus:7.3:*:*:*:*:*:*:*"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "cve": {
+    "id": "CVE-2021-2307",
+    "vulnStatus": "Modified",
+    "descriptions": [
+     {
+      "lang": "en",
+      "value": "Vulnerability in the MySQL Server product of Oracle MySQL (component: Server: Packaging). Supported versions that are affected are 5.7.33 and prior and 8.0.23 and prior. Easily exploitable vulnerability allows unauthenticated attacker with logon to the infrastructure where MySQL Server executes to compromise MySQL Server. Successful attacks require human interaction from a person other than the attacker. Successful attacks of this vulnerability can result in unauthorized access to critical data or complete access to all MySQL Server accessible data as well as unauthorized update, insert or delete access to some of MySQL Server accessible data. CVSS 3.1 Base Score 6.1 (Confidentiality and Integrity impacts). CVSS Vector: (CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:L/A:N)."
+     }
+    ],
+    "metrics": {
+     "cvssMetricV31": [
+      {
+       "cvssData": {
+        "baseScore": 6.1,
+        "baseSeverity": "MEDIUM"
+       }
+      }
+     ]
+    },
+    "configurations": [
+     {
+      "nodes": [
+       {
+        "operator": "OR",
+        "negate": false,
+        "cpeMatch": [
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:oracle:mysql:*:*:*:*:*:*:*:*",
+          "versionStartIncluding": "8.0.0",
+          "versionEndIncluding": "8.0.23"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "nodes": [
+       {
+        "operator": "OR",
+        "negate": false,
+        "cpeMatch": [
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:netapp:active_iq_unified_manager:-:*:*:*:*:vmware_vsphere:*:*"
+         },
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:netapp:active_iq_unified_manager:-:*:*:*:*:windows:*:*"
+         },
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:netapp:oncommand_insight:-:*:*:*:*:*:*:*"
+         },
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:netapp:oncommand_workflow_automation:-:*:*:*:*:*:*:*"
+         },
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:netapp:snapcenter:-:*:*:*:*:*:*:*"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "cve": {
+    "id": "CVE-2012-2122",
+    "vulnStatus": "Modified",
+    "descriptions": [
+     {
+      "lang": "en",
+      "value": "sql/password.c in Oracle MySQL 5.1.x before 5.1.63, 5.5.x before 5.5.24, and 5.6.x before 5.6.6, and MariaDB 5.1.x before 5.1.62, 5.2.x before 5.2.12, 5.3.x before 5.3.6, and 5.5.x before 5.5.23, when running in certain environments with certain implementations of the memcmp function, allows remote attackers to bypass authentication by repeatedly authenticating with the same incorrect password, which eventually causes a token comparison to succeed due to an improperly-checked return value."
+     }
+    ],
+    "metrics": {
+     "cvssMetricV2": [
+      {
+       "cvssData": {
+        "baseScore": 5.1
+       },
+       "baseSeverity": "MEDIUM"
+      }
+     ]
+    },
+    "configurations": [
+     {
+      "nodes": [
+       {
+        "operator": "OR",
+        "negate": false,
+        "cpeMatch": [
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:oracle:mysql:5.1.51:*:*:*:*:*:*:*"
+         },
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:oracle:mysql:5.1.52:*:*:*:*:*:*:*"
+         },
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:oracle:mysql:5.1.52:sp1:*:*:*:*:*:*"
+         },
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:oracle:mysql:5.1.53:*:*:*:*:*:*:*"
+         },
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:oracle:mysql:5.1.54:*:*:*:*:*:*:*"
+         },
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:oracle:mysql:5.1.55:*:*:*:*:*:*:*"
+         },
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:oracle:mysql:5.1.56:*:*:*:*:*:*:*"
+         },
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:oracle:mysql:5.1.57:*:*:*:*:*:*:*"
+         },
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:oracle:mysql:5.1.58:*:*:*:*:*:*:*"
+         },
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:oracle:mysql:5.1.59:*:*:*:*:*:*:*"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "nodes": [
+       {
+        "operator": "OR",
+        "negate": false,
+        "cpeMatch": [
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:oracle:mysql:5.5.10:*:*:*:*:*:*:*"
+         },
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:oracle:mysql:5.5.11:*:*:*:*:*:*:*"
+         },
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:oracle:mysql:5.5.12:*:*:*:*:*:*:*"
+         },
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:oracle:mysql:5.5.13:*:*:*:*:*:*:*"
+         },
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:oracle:mysql:5.5.14:*:*:*:*:*:*:*"
+         },
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:oracle:mysql:5.5.15:*:*:*:*:*:*:*"
+         },
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:oracle:mysql:5.5.16:*:*:*:*:*:*:*"
+         },
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:oracle:mysql:5.5.17:*:*:*:*:*:*:*"
+         },
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:oracle:mysql:5.5.18:*:*:*:*:*:*:*"
+         },
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:oracle:mysql:5.5.19:*:*:*:*:*:*:*"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "nodes": [
+       {
+        "operator": "OR",
+        "negate": false,
+        "cpeMatch": [
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:oracle:mysql:5.6.2:*:*:*:*:*:*:*"
+         },
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:oracle:mysql:5.6.3:*:*:*:*:*:*:*"
+         },
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:oracle:mysql:5.6.4:*:*:*:*:*:*:*"
+         },
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:oracle:mysql:5.6.5:*:*:*:*:*:*:*"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "nodes": [
+       {
+        "operator": "OR",
+        "negate": false,
+        "cpeMatch": [
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:mariadb:mariadb:5.1.41:*:*:*:*:*:*:*"
+         },
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:mariadb:mariadb:5.1.42:*:*:*:*:*:*:*"
+         },
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:mariadb:mariadb:5.1.44:*:*:*:*:*:*:*"
+         },
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:mariadb:mariadb:5.1.47:*:*:*:*:*:*:*"
+         },
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:mariadb:mariadb:5.1.49:*:*:*:*:*:*:*"
+         },
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:mariadb:mariadb:5.1.50:*:*:*:*:*:*:*"
+         },
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:mariadb:mariadb:5.1.51:*:*:*:*:*:*:*"
+         },
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:mariadb:mariadb:5.1.53:*:*:*:*:*:*:*"
+         },
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:mariadb:mariadb:5.1.55:*:*:*:*:*:*:*"
+         },
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:mariadb:mariadb:5.1.60:*:*:*:*:*:*:*"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "nodes": [
+       {
+        "operator": "OR",
+        "negate": false,
+        "cpeMatch": [
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:mariadb:mariadb:5.2.0:*:*:*:*:*:*:*"
+         },
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:mariadb:mariadb:5.2.1:*:*:*:*:*:*:*"
+         },
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:mariadb:mariadb:5.2.2:*:*:*:*:*:*:*"
+         },
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:mariadb:mariadb:5.2.3:*:*:*:*:*:*:*"
+         },
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:mariadb:mariadb:5.2.4:*:*:*:*:*:*:*"
+         },
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:mariadb:mariadb:5.2.5:*:*:*:*:*:*:*"
+         },
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:mariadb:mariadb:5.2.6:*:*:*:*:*:*:*"
+         },
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:mariadb:mariadb:5.2.7:*:*:*:*:*:*:*"
+         },
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:mariadb:mariadb:5.2.8:*:*:*:*:*:*:*"
+         },
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:mariadb:mariadb:5.2.9:*:*:*:*:*:*:*"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "nodes": [
+       {
+        "operator": "OR",
+        "negate": false,
+        "cpeMatch": [
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:mariadb:mariadb:5.3.0:*:*:*:*:*:*:*"
+         },
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:mariadb:mariadb:5.3.1:*:*:*:*:*:*:*"
+         },
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:mariadb:mariadb:5.3.2:*:*:*:*:*:*:*"
+         },
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:mariadb:mariadb:5.3.3:*:*:*:*:*:*:*"
+         },
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:mariadb:mariadb:5.3.4:*:*:*:*:*:*:*"
+         },
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:mariadb:mariadb:5.3.5:*:*:*:*:*:*:*"
+         },
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:mariadb:mariadb:5.3.6:*:*:*:*:*:*:*"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "nodes": [
+       {
+        "operator": "OR",
+        "negate": false,
+        "cpeMatch": [
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:mariadb:mariadb:5.5.20:*:*:*:*:*:*:*"
+         },
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:mariadb:mariadb:5.5.21:*:*:*:*:*:*:*"
+         },
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:mariadb:mariadb:5.5.22:*:*:*:*:*:*:*"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

@@ -30,6 +30,9 @@ def build_parser() -> argparse.ArgumentParser:
         sp.add_argument("--out", default="reports", help="output directory (default: reports)")
         sp.add_argument("--offline", action="store_true", help="skip NVD CVE lookups")
         sp.add_argument("--msf-db", help="path to Metasploit modules_metadata_base.json")
+        sp.add_argument("--cache-dir", help="NVD response cache (default: ~/.cache/reconforge/nvd)")
+        sp.add_argument("--cache-ttl", type=float, default=24.0, metavar="HOURS",
+                        help="how long cached NVD responses stay valid (default: 24)")
 
     scan = sub.add_parser("scan", help="run nmap, then analyse and report")
     common(scan)
@@ -50,14 +53,14 @@ def analyse(hosts, nvd: NVDClient | None, index: ModuleIndex):
             sf = ServiceFinding(service=s, findings=service_findings(s))
             if nvd:
                 try:
-                    sf.cves = nvd.lookup(s.product, s.version)
+                    sf.cves = nvd.lookup_service(s)
                 except Exception as exc:  # network errors should not kill the whole run
                     print(f"[!] CVE lookup failed for {s.label}: {exc}", file=sys.stderr)
             for c in sf.cves:
                 mods = index.modules_for(c.id)
                 if mods:
                     sf.modules[c.id] = mods
-                    suggestions += [(h.address, s.port, c.id, m) for m in mods]
+                    suggestions += [(h.address, s.port, c.id, m, c.confidence) for m in mods]
             hf.services.append(sf)
         findings.append(hf)
     return findings, suggestions
@@ -87,7 +90,8 @@ def main(argv: list[str] | None = None) -> int:
         print(f"[x] {exc}", file=sys.stderr)
         return 3
 
-    nvd = None if args.offline else NVDClient(cache_dir=Path(args.out) / ".nvd-cache")
+    nvd = None if args.offline else NVDClient(
+        cache_dir=Path(args.cache_dir) if args.cache_dir else None, ttl=args.cache_ttl * 3600)
     meta = find_metadata(args.msf_db)
     if meta is None:
         print("[i] Metasploit metadata not found; module suggestions skipped (use --msf-db)", file=sys.stderr)

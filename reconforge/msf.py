@@ -59,7 +59,7 @@ class ModuleIndex:
         return self.by_cve.get(cve_id.upper(), [])
 
 
-def resource_script(suggestions: list[tuple[str, int, str, Module]]) -> str:
+def resource_script(suggestions: list[tuple]) -> str:
     """Build a review-only msfconsole resource script. Every command is commented out."""
     lines = [
         "# reconforge suggested modules - REVIEW BEFORE USE",
@@ -67,9 +67,10 @@ def resource_script(suggestions: list[tuple[str, int, str, Module]]) -> str:
         "# module fits the exact service version, then uncomment what you intend to run.",
         "",
     ]
-    for host, port, cve_id, mod in suggestions:
+    for host, port, cve_id, mod, *rest in suggestions:
+        conf = f" [{rest[0]}]" if rest else ""
         lines += [
-            f"# {cve_id} -> {host}:{port} ({mod.type}: {mod.name})",
+            f"# {cve_id}{conf} -> {host}:{port} ({mod.type}: {mod.name})",
             f"# use {mod.fullname}",
             f"# set RHOSTS {host}",
             f"# set RPORT {port}",

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Reconstructed from the data in htb_fawn_report.md; the original Nmap XML was not saved. -->
+<nmaprun scanner="nmap" args="nmap -sV -sC -T4 --open -oX nmap.xml 10.129.64.80" version="7.95">
+  <host>
+    <status state="up" reason="syn-ack"/>
+    <address addr="10.129.64.80" addrtype="ipv4"/>
+    <ports>
+      <port protocol="tcp" portid="21">
+        <state state="open" reason="syn-ack"/>
+        <service name="ftp" product="vsftpd" version="3.0.3" ostype="Unix" method="probed" conf="10">
+          <cpe>cpe:/a:vsftpd:vsftpd:3.0.3</cpe>
+        </service>
+        <script id="ftp-anon" output="Anonymous FTP login allowed (FTP code 230)&#xa;-rw-r--r--    1 0        0              32 Jun 04  2021 flag.txt"/>
+        <script id="ftp-syst" output="&#xa;  STAT: &#xa;FTP server status:&#xa;     Connected to ::ffff:10.10.16.123"/>
+      </port>
+    </ports>
+  </host>
+</nmaprun>
