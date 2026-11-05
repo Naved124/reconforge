@@ -1,9 +1,7 @@
 # Reconnaissance Report
 
-> **Example output (reconforge 0.3.0).** Generated from the reconstructed scan `examples/htb_fawn_scan.xml`, not from the original Nmap XML. Compare with `htb_fawn_report.md` (v0.2, real scan, keyword matching).
-
-- **Generated:** 2026-11-04 14:52 UTC
-- **Authorized scope:** 10.129.64.80/32
+- **Generated:** 2026-11-05 06:30 UTC
+- **Authorized scope:** 10.129.77.225/32
 - **Hosts up:** 1
 - **Misconfigurations:** High 1, Low 1
 - **Candidate CVEs:** High 2
@@ -16,7 +14,7 @@
 > package or vendor alias) and `keyword-guess` (banner keyword search, no CPE).
 > Treat all of them as leads to verify manually.
 
-## 10.129.64.80
+## 10.129.77.225
 
 **Priority findings:**
 

@@ -136,8 +136,8 @@ Always verify before acting.
 ## Examples
 
 - `examples/htb_fawn_report.md` - real v0.2 output (keyword matching) for HTB Fawn.
-- `examples/htb_fawn_report_v0.3.md` - v0.3 output for the same service, generated from
-  `examples/htb_fawn_scan.xml`, which is reconstructed from the v0.2 report (the original XML was not saved).
+- `examples/htb_fawn_report_v0.3.md` - real v0.3 output for HTB Fawn, generated from the saved Nmap scan
+  `examples/htb_fawn_scan.xml` (scope `examples/htb_fawn_scope.txt`).
 - `examples/sample_report.md` - generated from the test fixtures with stubbed NVD responses.
 
 ## Tests
